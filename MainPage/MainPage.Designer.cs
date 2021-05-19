@@ -29,6 +29,7 @@ namespace MainPage
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.panel_menu = new System.Windows.Forms.Panel();
             this.bt_signOut = new FontAwesome.Sharp.IconButton();
             this.bt_clipboard = new FontAwesome.Sharp.IconButton();
@@ -44,6 +45,7 @@ namespace MainPage
             this.lb_titleChildForm = new System.Windows.Forms.Label();
             this.panel_shadow = new System.Windows.Forms.Panel();
             this.panel_desktop = new System.Windows.Forms.Panel();
+            this.pb_ilustration = new System.Windows.Forms.PictureBox();
             this.panel_menu.SuspendLayout();
             this.panel_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_home)).BeginInit();
@@ -52,6 +54,8 @@ namespace MainPage
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_currentChildForm)).BeginInit();
+            this.panel_desktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_ilustration)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_menu
@@ -275,12 +279,24 @@ namespace MainPage
             // panel_desktop
             // 
             this.panel_desktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel_desktop.Controls.Add(this.pb_ilustration);
             this.panel_desktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_desktop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel_desktop.Location = new System.Drawing.Point(220, 90);
             this.panel_desktop.Name = "panel_desktop";
             this.panel_desktop.Size = new System.Drawing.Size(919, 553);
             this.panel_desktop.TabIndex = 5;
+            // 
+            // pb_ilustration
+            // 
+            this.pb_ilustration.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pb_ilustration.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_ilustration.BackgroundImage")));
+            this.pb_ilustration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_ilustration.Location = new System.Drawing.Point(233, 110);
+            this.pb_ilustration.Name = "pb_ilustration";
+            this.pb_ilustration.Size = new System.Drawing.Size(419, 295);
+            this.pb_ilustration.TabIndex = 0;
+            this.pb_ilustration.TabStop = false;
             // 
             // MainPage
             // 
@@ -292,6 +308,7 @@ namespace MainPage
             this.Controls.Add(this.panel_titleBar);
             this.Controls.Add(this.panel_menu);
             this.Name = "MainPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel_menu.ResumeLayout(false);
             this.panel_logo.ResumeLayout(false);
@@ -302,6 +319,8 @@ namespace MainPage
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_currentChildForm)).EndInit();
+            this.panel_desktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_ilustration)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -323,6 +342,7 @@ namespace MainPage
         private FontAwesome.Sharp.IconPictureBox btn_minimize;
         private FontAwesome.Sharp.IconPictureBox btn_maximize;
         private FontAwesome.Sharp.IconPictureBox btn_close;
+        private System.Windows.Forms.PictureBox pb_ilustration;
     }
 }
 
