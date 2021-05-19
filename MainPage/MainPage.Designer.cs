@@ -141,7 +141,7 @@ namespace MainPage
             this.bt_home.FlatAppearance.BorderSize = 0;
             this.bt_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_home.ForeColor = System.Drawing.Color.Gainsboro;
-            this.bt_home.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.bt_home.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.bt_home.IconColor = System.Drawing.Color.Gainsboro;
             this.bt_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -150,7 +150,7 @@ namespace MainPage
             this.bt_home.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.bt_home.Size = new System.Drawing.Size(220, 60);
             this.bt_home.TabIndex = 1;
-            this.bt_home.Text = "Home";
+            this.bt_home.Text = "Registrar";
             this.bt_home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bt_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_home.UseVisualStyleBackColor = true;
