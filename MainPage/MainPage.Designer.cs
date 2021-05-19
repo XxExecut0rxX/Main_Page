@@ -65,7 +65,7 @@ namespace MainPage
             this.panel_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_menu.Location = new System.Drawing.Point(0, 0);
             this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(220, 514);
+            this.panel_menu.Size = new System.Drawing.Size(220, 643);
             this.panel_menu.TabIndex = 0;
             // 
             // bt_signOut
@@ -188,7 +188,7 @@ namespace MainPage
             this.panel_titleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_titleBar.Location = new System.Drawing.Point(220, 0);
             this.panel_titleBar.Name = "panel_titleBar";
-            this.panel_titleBar.Size = new System.Drawing.Size(808, 80);
+            this.panel_titleBar.Size = new System.Drawing.Size(919, 80);
             this.panel_titleBar.TabIndex = 3;
             this.panel_titleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_titleBar_MouseDown);
             // 
@@ -201,7 +201,7 @@ namespace MainPage
             this.btn_minimize.IconColor = System.Drawing.Color.Gainsboro;
             this.btn_minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_minimize.IconSize = 20;
-            this.btn_minimize.Location = new System.Drawing.Point(725, 7);
+            this.btn_minimize.Location = new System.Drawing.Point(836, 7);
             this.btn_minimize.Name = "btn_minimize";
             this.btn_minimize.Size = new System.Drawing.Size(22, 20);
             this.btn_minimize.TabIndex = 4;
@@ -217,7 +217,7 @@ namespace MainPage
             this.btn_maximize.IconColor = System.Drawing.Color.Gainsboro;
             this.btn_maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_maximize.IconSize = 20;
-            this.btn_maximize.Location = new System.Drawing.Point(753, 7);
+            this.btn_maximize.Location = new System.Drawing.Point(864, 7);
             this.btn_maximize.Name = "btn_maximize";
             this.btn_maximize.Size = new System.Drawing.Size(22, 20);
             this.btn_maximize.TabIndex = 3;
@@ -233,7 +233,7 @@ namespace MainPage
             this.btn_close.IconColor = System.Drawing.Color.Gainsboro;
             this.btn_close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_close.IconSize = 20;
-            this.btn_close.Location = new System.Drawing.Point(781, 7);
+            this.btn_close.Location = new System.Drawing.Point(892, 7);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(20, 20);
             this.btn_close.TabIndex = 2;
@@ -269,7 +269,7 @@ namespace MainPage
             this.panel_shadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_shadow.Location = new System.Drawing.Point(220, 80);
             this.panel_shadow.Name = "panel_shadow";
-            this.panel_shadow.Size = new System.Drawing.Size(808, 10);
+            this.panel_shadow.Size = new System.Drawing.Size(919, 10);
             this.panel_shadow.TabIndex = 4;
             // 
             // panel_desktop
@@ -279,19 +279,19 @@ namespace MainPage
             this.panel_desktop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel_desktop.Location = new System.Drawing.Point(220, 90);
             this.panel_desktop.Name = "panel_desktop";
-            this.panel_desktop.Size = new System.Drawing.Size(808, 424);
+            this.panel_desktop.Size = new System.Drawing.Size(919, 553);
             this.panel_desktop.TabIndex = 5;
             // 
-            // Form1
+            // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 514);
+            this.ClientSize = new System.Drawing.Size(1139, 643);
             this.Controls.Add(this.panel_desktop);
             this.Controls.Add(this.panel_shadow);
             this.Controls.Add(this.panel_titleBar);
             this.Controls.Add(this.panel_menu);
-            this.Name = "Form1";
+            this.Name = "MainPage";
             this.Text = "Form1";
             this.panel_menu.ResumeLayout(false);
             this.panel_logo.ResumeLayout(false);

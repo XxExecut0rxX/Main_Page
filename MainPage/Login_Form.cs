@@ -17,8 +17,12 @@ namespace MainPage
             InitializeComponent();
         }
 
+        //user and password registered
+
         private string userAuth = "admin";
         private string passAuth = "password123";
+
+        //Stiling and design
 
         private void pb_login_MouseLeave(object sender, EventArgs e)
         {
@@ -56,6 +60,23 @@ namespace MainPage
         private void Login_Form_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
+        }
+
+        //Authentication
+        private void pb_login_Click(object sender, EventArgs e)
+        {
+            if(tb_user.Text == userAuth && tb_pass.Text == passAuth)
+            {
+                MainPage loadMp = new MainPage();
+                loadMp.Visible = true;
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Contraseña o Usuario incorrecto, vuelva a intentarlo");
+                tb_user.Text = "";
+                tb_pass.Text = "";
+            }
         }
     }
 }

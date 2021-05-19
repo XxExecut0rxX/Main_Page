@@ -195,6 +195,7 @@ namespace MainPage
             this.pb_login.Size = new System.Drawing.Size(185, 58);
             this.pb_login.TabIndex = 23;
             this.pb_login.TabStop = false;
+            this.pb_login.Click += new System.EventHandler(this.pb_login_Click);
             this.pb_login.MouseLeave += new System.EventHandler(this.pb_login_MouseLeave);
             this.pb_login.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pb_login_MouseMove);
             // 
