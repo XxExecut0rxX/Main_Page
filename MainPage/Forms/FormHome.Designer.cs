@@ -76,13 +76,25 @@ namespace MainPage.Forms
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tb_db = new System.Windows.Forms.TabPage();
-            this.dgv_student = new System.Windows.Forms.DataGridView();
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tb_cel = new System.Windows.Forms.TextBox();
             this.tb_address = new System.Windows.Forms.TextBox();
+            this.tb_dbTut = new System.Windows.Forms.TabPage();
+            this.dgv_student = new System.Windows.Forms.DataGridView();
+            this.studentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tb_perData.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -91,8 +103,9 @@ namespace MainPage.Forms
             this.groupBox1.SuspendLayout();
             this.tb_tutorData.SuspendLayout();
             this.tb_db.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_student)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_student)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -101,6 +114,7 @@ namespace MainPage.Forms
             this.tabControl1.Controls.Add(this.tb_Inscripcion);
             this.tabControl1.Controls.Add(this.tb_tutorData);
             this.tabControl1.Controls.Add(this.tb_db);
+            this.tabControl1.Controls.Add(this.tb_dbTut);
             this.tabControl1.Location = new System.Drawing.Point(125, 68);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -553,18 +567,8 @@ namespace MainPage.Forms
             this.tb_db.Name = "tb_db";
             this.tb_db.Size = new System.Drawing.Size(732, 317);
             this.tb_db.TabIndex = 3;
-            this.tb_db.Text = "Base de datos";
+            this.tb_db.Text = "Base de datos estudiante";
             this.tb_db.UseVisualStyleBackColor = true;
-            // 
-            // dgv_student
-            // 
-            this.dgv_student.AutoGenerateColumns = false;
-            this.dgv_student.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_student.DataSource = this.studentBindingSource;
-            this.dgv_student.Location = new System.Drawing.Point(3, 3);
-            this.dgv_student.Name = "dgv_student";
-            this.dgv_student.Size = new System.Drawing.Size(726, 311);
-            this.dgv_student.TabIndex = 0;
             // 
             // studentBindingSource
             // 
@@ -611,6 +615,106 @@ namespace MainPage.Forms
             this.tb_address.Size = new System.Drawing.Size(100, 20);
             this.tb_address.TabIndex = 14;
             // 
+            // tb_dbTut
+            // 
+            this.tb_dbTut.Location = new System.Drawing.Point(4, 22);
+            this.tb_dbTut.Name = "tb_dbTut";
+            this.tb_dbTut.Size = new System.Drawing.Size(732, 317);
+            this.tb_dbTut.TabIndex = 4;
+            this.tb_dbTut.Text = "Base de datos Tutor";
+            this.tb_dbTut.UseVisualStyleBackColor = true;
+            // 
+            // dgv_student
+            // 
+            this.dgv_student.AutoGenerateColumns = false;
+            this.dgv_student.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_student.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.addressDataGridViewTextBoxColumn});
+            this.dgv_student.DataSource = this.studentBindingSource1;
+            this.dgv_student.Location = new System.Drawing.Point(0, 0);
+            this.dgv_student.Name = "dgv_student";
+            this.dgv_student.Size = new System.Drawing.Size(732, 314);
+            this.dgv_student.TabIndex = 0;
+            // 
+            // schoolDataSet
+            // 
+            // 
+            // studentBindingSource1
+            // 
+            this.studentBindingSource1.DataMember = "Student";
+            // 
+            // studentTableAdapter
+            // 
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "rude";
+            this.dataGridViewTextBoxColumn10.HeaderText = "rude";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "CI";
+            this.dataGridViewTextBoxColumn11.HeaderText = "CI";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "name";
+            this.dataGridViewTextBoxColumn12.HeaderText = "name";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "last_names";
+            this.dataGridViewTextBoxColumn13.HeaderText = "last_names";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "cell";
+            this.dataGridViewTextBoxColumn14.HeaderText = "cell";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "gender";
+            this.dataGridViewTextBoxColumn15.HeaderText = "gender";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Birthday";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Birthday";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Course";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Course";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Parallel";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Parallel";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -638,8 +742,9 @@ namespace MainPage.Forms
             this.tb_tutorData.ResumeLayout(false);
             this.tb_tutorData.PerformLayout();
             this.tb_db.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_student)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_student)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -705,7 +810,6 @@ namespace MainPage.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn birthdayDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn courseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn parallelDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView dgv_student;
         private System.Windows.Forms.BindingSource studentBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -718,5 +822,18 @@ namespace MainPage.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.TextBox tb_address;
         private System.Windows.Forms.TextBox tb_cel;
+        private System.Windows.Forms.TabPage tb_dbTut;
+        private System.Windows.Forms.DataGridView dgv_student;
+        private System.Windows.Forms.BindingSource studentBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
     }
 }
