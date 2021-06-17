@@ -19,8 +19,8 @@ namespace MainPage
 
         //user and password registered
 
-        private string userAuth = "admin";
-        private string passAuth = "password123";
+        private string userAuth = "root";
+        private string passAuth = "toor";
 
         //Stiling and design
 

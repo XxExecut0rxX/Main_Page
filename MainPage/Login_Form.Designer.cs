@@ -103,7 +103,7 @@ namespace MainPage
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(175)))));
-            this.label2.Location = new System.Drawing.Point(526, 91);
+            this.label2.Location = new System.Drawing.Point(538, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 28);
             this.label2.TabIndex = 16;
@@ -114,7 +114,7 @@ namespace MainPage
             this.pictureBox2.BackgroundImage = global::MainPage.Properties.Resources.bgtxt;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(459, 151);
+            this.pictureBox2.Location = new System.Drawing.Point(476, 150);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(281, 73);
             this.pictureBox2.TabIndex = 17;
@@ -125,7 +125,7 @@ namespace MainPage
             this.pictureBox3.BackgroundImage = global::MainPage.Properties.Resources.bgtxt;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(459, 230);
+            this.pictureBox3.Location = new System.Drawing.Point(476, 229);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(281, 73);
             this.pictureBox3.TabIndex = 18;
@@ -162,7 +162,7 @@ namespace MainPage
             this.tb_user.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_user.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_user.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(175)))));
-            this.tb_user.Location = new System.Drawing.Point(488, 176);
+            this.tb_user.Location = new System.Drawing.Point(511, 174);
             this.tb_user.Name = "tb_user";
             this.tb_user.Size = new System.Drawing.Size(202, 24);
             this.tb_user.TabIndex = 21;
@@ -176,7 +176,7 @@ namespace MainPage
             this.tb_pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_pass.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(175)))));
-            this.tb_pass.Location = new System.Drawing.Point(488, 253);
+            this.tb_pass.Location = new System.Drawing.Point(511, 253);
             this.tb_pass.Name = "tb_pass";
             this.tb_pass.Size = new System.Drawing.Size(202, 24);
             this.tb_pass.TabIndex = 22;
@@ -190,7 +190,7 @@ namespace MainPage
             this.pb_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_login.InitialImage = null;
-            this.pb_login.Location = new System.Drawing.Point(505, 309);
+            this.pb_login.Location = new System.Drawing.Point(528, 308);
             this.pb_login.Name = "pb_login";
             this.pb_login.Size = new System.Drawing.Size(185, 58);
             this.pb_login.TabIndex = 23;
@@ -206,7 +206,7 @@ namespace MainPage
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(763, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(747, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 22);
             this.pictureBox4.TabIndex = 24;
@@ -218,9 +218,9 @@ namespace MainPage
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::MainPage.Properties.Resources.images;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 450);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pb_login);
             this.Controls.Add(this.tb_pass);
